@@ -1,0 +1,270 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        * {
+            font-family: "Nunito", sans-serif;
+        }
+
+        @-webkit-keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0;
+            }
+
+            to {
+                top: 0;
+                opacity: 1;
+            }
+        }
+
+        @keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0;
+            }
+
+            to {
+                top: 0;
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes zoomIn {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale3d(0.3, 0.3, 0.3);
+                transform: scale3d(0.3, 0.3, 0.3);
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale3d(0.3, 0.3, 0.3);
+                transform: scale3d(0.3, 0.3, 0.3);
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+
+
+        .circles {
+
+            width: 100%;
+            height: 96%;
+            overflow: hidden;
+        }
+
+        .circles li {
+            position: absolute;
+            display: block;
+            list-style: none;
+            width: 20px;
+            height: 20px;
+            background: rgba(17, 103, 233, 0.2);
+            animation: animate 25s linear infinite;
+            bottom: -150px;
+        }
+
+        .circles li:nth-child(1) {
+            left: 25%;
+            width: 80px;
+            height: 80px;
+            animation-delay: 0s;
+        }
+
+        .circles li:nth-child(2) {
+            left: 10%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 2s;
+            animation-duration: 12s;
+        }
+
+        .circles li:nth-child(3) {
+            left: 70%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 4s;
+        }
+
+        .circles li:nth-child(4) {
+            left: 40%;
+            width: 60px;
+            height: 60px;
+            animation-delay: 0s;
+            animation-duration: 18s;
+        }
+
+        .circles li:nth-child(5) {
+            left: 65%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 0s;
+        }
+
+        .circles li:nth-child(6) {
+            left: 75%;
+            width: 110px;
+            height: 110px;
+            animation-delay: 3s;
+        }
+
+        .circles li:nth-child(7) {
+            left: 35%;
+            width: 150px;
+            height: 150px;
+            animation-delay: 7s;
+        }
+
+        .circles li:nth-child(8) {
+            left: 50%;
+            width: 25px;
+            height: 25px;
+            animation-delay: 15s;
+            animation-duration: 45s;
+        }
+
+        .circles li:nth-child(9) {
+            left: 20%;
+            width: 15px;
+            height: 15px;
+            animation-delay: 2s;
+            animation-duration: 35s;
+        }
+
+        .circles li:nth-child(10) {
+            left: 85%;
+            width: 150px;
+            height: 150px;
+            animation-delay: 0s;
+            animation-duration: 11s;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+                border-radius: 0;
+            }
+
+            100% {
+                transform: translateY(-1000px) rotate(720deg);
+                opacity: 0;
+                border-radius: 50%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="area bg-slate-50 w-full h-screen absolute -z-10">
+        <ul class="circles absolute top-0 left-0">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <section class="relative py-20 ">
+        <div class="relative z-20  flex justify-center items-center py-8 max-2xl:px-8">
+           
+            <div class="flex flex-col justify-center items-center text-center space-y-12 max-w-7xl mx-auto ">
+                
+                <h1 class="text-7xl font-extrabold text-gray-900 max-w-4xl max-md:text-5xl max-sm:text-5xl">It's time to change your
+                    work</h1>
+                <p class="text-gray-500 leading-7 max-lg:!leading-6 text-center max-w-4xl max-md:text-sm">We are committed to helping you
+                    double your income, grow quickly, and make your dreams come true. Our innovative systems are
+                    designed to unlock your potential for effortless work.
+                </p>
+                <div class="flex max-sm:flex-col gap-6 items-baseline">
+                    <form action="" class="lg:flex max-lg:flex-col lg:space-x-4 max-lg:space-y-4">
+                        <div>
+                            <input class="border-slate-300 border rounded-lg py-3 px-8" placeholder="Your name"
+                                type="text">
+                        </div>
+                        <div>
+                            <input class="border-slate-300 border rounded-lg py-3 px-8" placeholder="Your email"
+                                type="email">
+                        </div>
+                        <button
+                            class="bg-[#1167E9] max-lg:w-full text-white py-3 px-8 rounded-lg font-bold cursor-pointer border border-[#1167E9] hover:bg-opacity-90">Get
+                            Started</button>
+
+                    </form>
+                    
+                </div>
+
+                <div class="md:flex max-md:flex-col md:space-x-4 max-md:space-y-4">
+                    <div class="flex space-x-2 items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-gift size-6 text-[#1167E9]">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 8m0 1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1z" />
+                            <path d="M12 8l0 13" />
+                            <path d="M19 12v7a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-7" />
+                            <path
+                                d="M7.5 8a2.5 2.5 0 0 1 0 -5a4.8 8 0 0 1 4.5 5a4.8 8 0 0 1 4.5 -5a2.5 2.5 0 0 1 0 5" />
+                        </svg>
+                        <p class="text-slate-400">Free trial for 15 days</p>
+                    </div>
+
+                    <div class="flex space-x-2 items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-credit-card-off size-6 text-[#1167E9]">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 3l18 18" />
+                            <path d="M9 5h9a3 3 0 0 1 3 3v8a3 3 0 0 1 -.128 .87" />
+                            <path
+                                d="M18.87 18.872a3 3 0 0 1 -.87 .128h-12a3 3 0 0 1 -3 -3v-8c0 -1.352 .894 -2.495 2.124 -2.87" />
+                            <path d="M3 11l8 0" />
+                            <path d="M15 11l6 0" />
+                            <path d="M7 15l.01 0" />
+                            <path d="M11 15l2 0" />
+                        </svg>
+                        <p class="text-slate-400">No credit card required</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="relative z-50 max-w-6xl mx-auto mt-12 max-md:px-8">
+            <img class="w-full rounded-3xl shadow-lg"
+                src="https://cdn.dribbble.com/users/1044298/screenshots/11846684/media/f5c668213923af05dfa6d186f16c97ff.png?resize=1000x750&vertical=center"
+                alt="">
+        </div>
+
+    </section>
+
+</body>
+</html>
